@@ -1,0 +1,64 @@
+/* 1. 웹페이지 전체의 기본 여백을 없애서 화면 끝에 밀착시키기 */
+
+/* 2. 왼쪽 메뉴 박스 설정 */
+.box-list {
+    width: 240px;         
+    height: 100vh;        
+    background-color: #FDFBFB; 
+    position: fixed;       /* 스크롤을 내려도 왼쪽에 고정되게 하려면 추가 */
+    top: 0;
+    left: 0;
+}
+
+
+
+/* 아래는 아이콘과 글자 정렬을 위한 기존 스타일 세트 */
+.box-list nav {
+    padding: 20px;
+}
+.boxBtn h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    
+}
+.mainBtn{
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.hr{ 
+    margin-bottom: 35px;
+}
+.box-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.box-list li {
+    margin-bottom: px;
+}
+.box-list ul a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 16px;
+    background-color: #F7EBE8;
+    color: #5C4033;
+    border-radius: 8px;
+    transition: background 0.2s;
+    margin-bottom: 20px;
+    font-size: 14px; 
+}
+.box-list img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+
+.box-list a:hover {
+    background-color: #EED5D0;
+}
