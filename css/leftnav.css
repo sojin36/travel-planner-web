@@ -8,6 +8,7 @@
     position: fixed;       /* 스크롤을 내려도 왼쪽에 고정되게 하려면 추가 */
     top: 0;
     left: 0;
+    flex-shrink: 0;
 }
 
 

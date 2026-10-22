@@ -1,0 +1,194 @@
+/* 1. header-top */
+.header-top{
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+.header-top .text{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header-top h2{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.header-top p{
+    font-size: 12px;
+
+}
+.header-top #headerBtn{
+    background-color: palevioletred;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: background 0.2s;
+}
+.header-top #headerBtn:hover{
+    background-color: plum;
+}
+
+/* 2. header-middle */
+.header-middle{
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.header-middle .mytravle{
+    font-size: 14px;
+}
+.header-middle a{
+    padding: 3px;
+}
+
+
+/* 여행 카드 2개 가로로 나란히 배치 */
+.card-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+/* 3. header-bottom1 */
+.header-bottom1{
+    flex: 1.5; /* 전체 공간 중 더 많은 비율 차지 */
+    background: linear-gradient(135deg, #FF6B35, #EA580C);
+    border-radius: 15px;
+    overflow: hidden; /* 내부 요소 둥근 모소리 밖으로 튀어나가지 않게 보호*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 20px rgba(234, 88, 12, 0.15);
+    min-height: 250px;
+
+}
+.header-bottom1 h2{
+    font-size: 26px;
+    margin: 24px 24px 10px 24px;
+}
+.header-bottom1 .header-bot{
+    padding: 0 24px 20px 24px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+.bottom1-img{
+    font-size: 170px;
+    color: #fff;
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+
+    /* opacity: 0.85; */
+}
+
+/* 카드 하단 검은색 바 내부 글자들 가로 나란히 정렬 */
+.header-bottom1 #header-bt{
+    background-color: #000;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 13px;
+}
+.header-bottom1 .bt-info{
+    display: flex;
+    gap: 30px;
+    color: #fff;
+}
+.header-bottom1 #header-bt img{
+    width: 16px;
+    height: 16px;
+    
+}
+
+
+/* 4. header-bottom2 */
+.header-bottom2{
+    flex: 0.5;
+    background-color: #EBF3FA;
+    border: 2px dashed #BBD5ED;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header-bottom2 h3 {
+    font-size: 16px;
+    color: #1E293B;
+    margin: 12px 0 6px 0;
+}
+
+.header-bottom2 p {
+    font-size: 12px;
+    color: #64748B;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 5.header-bottom3 */
+.header-bottom3{
+    background-color: #fff;
+    margin: 20px 40px;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+.header-bottom3 .bottom3-text{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.header-bottom3 .bottom3-bottom{
+    /* background-color: mediumaquamarine; */
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+/* 개별 가이드 카드 (a태그) */
+.header-bottom3 .guide-card{
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #333;
+}
+.header-bottom3 .guide-card img{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+/* 카드 내부 텍스트 영역 */
+.guide-info strong{
+    display: block;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+.guide-info p{
+    font-size: 11px;
+    margin: 0;
+}

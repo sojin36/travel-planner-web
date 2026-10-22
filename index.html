@@ -1,100 +1,151 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 파비콘 -->
-    <link rel="icon" href="image/emojione-monotone_koala.png">
+    <link rel="icon" href="image/emojione-monotone_koala.png" />
     <title>소진이랑</title>
     <!-- css -->
-    <link rel="stylesheet" href="css/Default Settings.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/leftnav.css">
-</head>
+    <link rel="stylesheet" href="css/Default Settings.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/leftnav.css" />
 
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
- 
-<body>
+  </head>
+
+  <body>
     <!-- 전체 레이아웃 -->
     <div class="layout">
-        <!-- 상단 -->
-        <header>
-            <div class="header">
-                <p>내 여행</p>
-                <p>나만의 여행 플래너</p>
+        <!-- 오른쪽 메인 콘텐츠 영역 (헤더 + 본문) -->
+        <main class="main-content">
+            <!-- 상단 -->
+            <header class="top-header">
+                <div class="header">
+                <p class="header-title">내 여행</p>
+                <p class="header-sub">나만의 여행 플래너</p>
+                </div>
+            </header>
+
+            <!-- main 내용 -->
+            <div class="header-top">
+                <div class="text1">
+                    <h2>우리의 다음 여행은 어디일까요?</h2>
+                    <p>설레는 계획부터 소중한 기록까지, 소진이랑 함께해용!</p>
+                </div>
+                <a href="#" id="headerBtn">+ 새 여행지 추가</a>
             </div>
-        </header>
 
-
-
-        <!-- main 내용 -->
-        <div class="header-top">
-            <h2>우리의 다음 여행은?</h2>
-            <p>설레는 계획부터 소중한 기록까지, 소진이랑 함께해용!</p>
-            <button id="headerBtn"> + 새 여행지 추가</button>
-        </div>
-
-        <div class="header-middle">
-            <span class="mytravle">내 여행 1</span>
-            <a href="#"><img src="image/layout-grid.png" alt="grid"></a>
-            <a href="#"><img src="image/andrsrxn_list-heart.png" alt="list"></a>
-        </div>
-
-        <div class="header-bottom1">
-            <h2>1주년 여행</h2>
-            <div class="header-bot">
-                <p>싱가포르 <br> Singapore</p>
-                <span>2026년 5월 10일 ~ 5월 15일</span>
-                <img src="image/streamline-emojis_lion-face.png" alt="사자">
+            <div class="header-middle">
+                <span class="mytravle">내 여행 1</span>
+                    <div class="list">
+                        <a href="#"><img src="image/layout-grid.png" alt="grid" /></a>
+                        <a href="#"><img src="image/andrsrxn_list-heart.png" alt="list" /></a>
+                    </div>
             </div>
-            <a href="#" id="header-bt">
-                <div>5개 일정</div>
-                <div>2개 메모</div>
-                <div>0장 사진</div>
-                <a href="#"><img src="image/arrow-up-right.png" alt="화살표"></a>
-            </a>
-        </div>
-
-        <div class="header-bottom2">
-            <a href="#">+</a>
-            <h3>새 여행지 추가</h3>
-            <p>가고 싶은 도시를 정하고 <br> 새로운 여행을 시작해 보세용</p>
-        </div>
-        <div class="header-bottom3">
-            <p>여행을 준비하는 작은 순서</p>
-            <span><img src="image/Guide symbol.png" alt="지도"> 가고 싶은 곳 모으기 
-                <p>지도와 체크리스트로 동선을 정리해요</p> 
-            </span>
-            <span><img src="image/Guide symbol (1).png" alt="메모"> 꼭 기억할 정보 남기기 
-                <p>예약 정보의 맛집을 메모에 담아두세요</p> 
-            </span>
-            <span><img src="image/Guide symbol (2).png" alt="사진"> 여행의 순간 기록하기 
-                <p>돌아와서도 꺼내 볼 추억을 모아요 </p> 
-            </span>   
-        </div>
 
 
+            <!-- 여행 카드 2개 감싸는 부모 컨테이너 추가 -->
+            <div class="card-container">
+                <div class="header-bottom1">
+                    <h2>1주년 여행</h2>
+                    <div class="header-bot">
+                        <div class="text-group">
+                            <p>싱가포르 <br> Singapore</p>
+                            <span>2026년 5월 10일 ~ 5월 15일</span>
+                        </div>
+                            <i class="fa-solid fa-plane bottom1-img" ></i>
+                    </div>
+
+                    <div id="header-bt">
+                        <a href="#" class="bt-info">
+                            <div>5개 일정</div>
+                            <div>2개 메모</div>
+                            <div>0장 사진</div>
+                        <a href="#"><img src="image/arrow-up-right.png" alt="화살표" />
+                        </a>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 점선 새 여행지 추가 카드 -->
+                <div class="header-bottom2">
+                    <a href="#">+</a>
+                    <h3>새 여행지 추가</h3>
+                    <p>
+                        가고 싶은 도시를 정하고 <br />
+                        새로운 여행을 시작해 보세용
+                    </p>
+                </div>
+            </div>
+            
+            <div class="header-bottom3">
+                <p class="bottom3-text">여행을 준비하는 작은 순서</p>
+                    <div class="bottom3-bottom">
+                        <a href="#" class="guide-card">
+                            <img src="image/Guide symbol.png" alt="지도" />
+                            <div class="guide-info">
+                                <strong>가고 싶은 곳 모으기</strong>
+                                <p>지도와 체크리스트로 동선을 정리해요</p>
+                            </div> 
+                        </a>
+                        <a href="#" class="guide-card">
+                            <img src="image/Guide symbol (1).png" alt="메모" />
+                            <div class="guide-info">
+                                <strong>꼭 기억할 정보 남기기</strong>
+                                <p>예약 정보의 맛집을 메모에 담아두세요</p>
+                            </div>
+                        </a>
+                        <a href="#" class="guide-card">
+                            <img src="image/Guide symbol (2).png" alt="사진" />
+                            <div class="guide-info">
+                                <strong>여행의 순간 기록하기</strong>
+                                <p>돌아와서도 꺼내 볼 추억을 모아요</p>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </main>
+      
 
         <!-- 왼쪽 메뉴들 -->
-        <div class="box-list">
-            <nav>
-                <a href="#" class="boxBtn">
-                    <img src="image/emojione-monotone_koala.png" alt="로고" class="box-logo">
-                    <h2>소진이랑 ✈</h2>
-                </a>
-                <ul>
-                    <li><a href="#" class="mainBtn"><img src="image/nav/luggage.png" alt="">내 여행</a></li>
-                    <hr class="hr">
-                    <li><a href="#"><img src="image/nav/house.png" alt="">여행 홈</a></li>                                          
-                    <li><a href="#"><img src="image/nav/map-pin.png" alt="">지도</a></li>
-                    <li><a href="#"><img src="image/nav/Vector (1).png" alt="">일정</a></li>
-                    <li><a href="#"><img src="image/nav/sticky-note.png" alt="">메모</a></li>
-                    <li><a href="#"><img src="image/nav/images.png" alt="">앨범</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>    
-</body>
+        <aside class="box-list">
+        <nav>
+          <a href="#" class="boxBtn">
+            <img
+              src="image/emojione-monotone_koala.png"
+              alt="로고"
+              class="box-logo"/>
+            <h2>소진이랑 ✈</h2>
+          </a>
+          <ul>
+            <li>
+              <a href="#" class="mainBtn"
+                ><img src="image/nav/luggage.png" alt="" />내 여행</a
+              >
+            </li>
+            <hr class="hr" />
+            <li>
+              <a href="#"><img src="image/nav/house.png" alt="" />여행 홈</a>
+            </li>
+            <li>
+              <a href="#"><img src="image/nav/map-pin.png" alt="" />지도</a>
+            </li>
+            <li>
+              <a href="#"><img src="image/nav/Vector (1).png" alt="" />일정</a>
+            </li>
+            <li>
+              <a href="#"><img src="image/nav/sticky-note.png" alt="" />메모</a>
+            </li>
+            <li>
+              <a href="#"><img src="image/nav/images.png" alt="" />앨범</a>
+            </li>
+          </ul>
+        </nav>
+        </aside>
+    </div>
+  </body>
 </html>
-
